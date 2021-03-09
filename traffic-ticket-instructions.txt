@@ -1,0 +1,41 @@
+Programming Project 3: Text Files and Traffic Tickets
+Object of this exercise: use functions, loops, and lists to read and process data in a text file.
+
+no global variables
+
+Your program should use a loop to read traffic ticket information from a data file containing 30 tab-separated records. Each record has the offender's name, the ticketed speed, and the posted speed limit for a given citation. For example, citizen Davis was ticketed for going 76 mph in a zone with a posted speed limit of 55 mph. Citizen Wilson was doing 64 mph in a 45 mph zone. As shown...
+
+Davis      76     55
+Wilson     64     45
+Syler      56     35
+... and so on
+
+Your program should read the data file and calculate the fine for each offender based upon the following fine structure:
+
+for a violation of less than 5 mph over the limit, the fine is $65
+for a violation of between 5 and up to but not including 10 mph over the limit, the fine is $85
+for a violation of between 10 and up to but not including 15 mph over the limit, the fine is $120
+for a violation of between 15 and up to but not including 25 mph over the limit, the fine is $150
+for a violation of 25 mph or more over the limit, the fine is $200
+For each record, your program should print the name, calculate and print the number of miles-per-hour over the posted limit, and also calculate the fine for each record. After printing all 30 records, you need to print the count of the total number of fines for each fine category based on this data.
+
+The tab-separated text file you need to use can be accessed using this link:   speeds.txt.  
+
+Copy the speeds.txt file to the folder where your program will reside.
+
+So, your output should look something like the following, but with all 30 records and an accurate count for the number of tickets per category. For example, there were no tickets issued for less then 5 mph over, but there were 3 tickets issued for between 5 and 10 mph, and 4 tickets issued for between 10 and 15 mph. So, the top part of your print out of the data will contain the name, mph over, and fine for each of the 30 offenders, and after all 30 have been printed you need to print the count for each ticket category. I will leave it up to you to figure out how many tickets were given in the last two categories.
+
+Name   MPH Over   Fine
+---------------------------
+Davis     21      150
+Wilson    19      150
+Syler     21      150
+Green     17      150
+Smith     47      200
+...and 25 more
+
+Tickets less than 5 mph over: 0
+Tickets between 5 and 10 mph over: 3
+Tickets between 10 and 15 mph over: 4
+Tickets between 15 and 25 mph over ?
+Tickets greater than 25 mph over: ?
