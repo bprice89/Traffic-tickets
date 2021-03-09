@@ -17,13 +17,13 @@ def getFine(totalSpeed):
     fine = 150
 
   else:
-     fine = 200   
+    fine = 200  
 
   return (fine)  
 
 def main():
    rates = []
-  
+   
 
    dataList = readData()
    print("Name      MPH over  Fine")
@@ -34,7 +34,7 @@ def main():
 
      fine = getFine(totalSpeed)
 
-     rates.append(rate)
+     rates.append(fine)
 
      print("%-9s  %4d  %6d" % (name, totalSpeed, fine))
 
