@@ -27,6 +27,8 @@ def main():
 
    dataList = readData()
    print("Name      MPH over  Fine")
+   print("-----------------------------")
+   print()
    for record in dataList:
      name, speed, speedLimit = record.split()
 
@@ -37,6 +39,13 @@ def main():
      rates.append(fine)
 
      print("%-9s  %4d  %6d" % (name, totalSpeed, fine))
+
+   print()
+   print("Tickets less than 5 mph over: " ,rates.count(65))
+   print("Tickets between 5 and 10 mph over: " ,rates.count(85))
+   print("Tickets between 10 and 15 mph over: " ,rates.count(120))
+   print("Tickets between 15 and 25 mph over: " ,rates.count(150))
+   print("Tickets greater than 25 mph over: " ,rates.count(200))
 
 main()
 

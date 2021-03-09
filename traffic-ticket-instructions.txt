@@ -1,9 +1,7 @@
 Programming Project 3: Text Files and Traffic Tickets
 Object of this exercise: use functions, loops, and lists to read and process data in a text file.
 
-no global variables
-
-Your program should use a loop to read traffic ticket information from a data file containing 30 tab-separated records. Each record has the offender's name, the ticketed speed, and the posted speed limit for a given citation. For example, citizen Davis was ticketed for going 76 mph in a zone with a posted speed limit of 55 mph. Citizen Wilson was doing 64 mph in a 45 mph zone. As shown...
+no global variablesYour program should use a loop to read traffic ticket information from a data file containing 30 tab-separated records. Each record has the offender's name, the ticketed speed, and the posted speed limit for a given citation. For example, citizen Davis was ticketed for going 76 mph in a zone with a posted speed limit of 55 mph. Citizen Wilson was doing 64 mph in a 45 mph zone. As shown...
 
 Davis      76     55
 Wilson     64     45
@@ -39,3 +37,16 @@ Tickets between 5 and 10 mph over: 3
 Tickets between 10 and 15 mph over: 4
 Tickets between 15 and 25 mph over ?
 Tickets greater than 25 mph over: ?
+
+To get full credit your program needs to accomplish the following.
+
+Your code needs to read the traffic ticket data from the supplied text file. Do not modify the file, it needs to keep its current structure.
+You need to print each offenders name, number of mph over the posted limit for that offender, and the amount of the fine for that person. Printouts need to be neat and properly aligned, where the names are left justified, and the MPH over and fine values are right justified and line up in straight columns, as shown above. The part of the printout containing the count of tickets in each category does not need to be formatted into columns unless you just want to.
+You need to process the data with a loop, and that loop should be able to work properly even if the number of citations in the file varies from day to day. That is, don't use 30 as a magic number. The program should work no matter how many records the file might contain.
+Your program must have at least 2 functions written by you. A main() function, and a function to determine mph over and/or the fine. The main function should contain the loop that reads the data. You could easily have more than 2 functions if you choose, but you need 2 minimum.
+The non-main function should do the mph-over calculation. It might also do the fine determination. Or you may have separate functions for each. This will require passing an argument (or augments) or returning a value, or both. Knowing how to do arguments/return values is a goal of the exercise.
+This program will probably require a little more thought than previous assignments. Start early and ask questions if you get stuck. And, when I wrote this program, in the loop I added each fine to a list and used the list's count() method to count the number of fines issued for each category. You can go about this any way you want to, though. Just sayin'.
+
+Also, the best examples to use for this program come from the lecture notes on strings along with the notes that introduce text files. This is not really a menu-type program like you might find in the notes for the week that discusses lists.
+
+For this assignment and all future assignments you may not use any global variables, unless stated otherwise.
